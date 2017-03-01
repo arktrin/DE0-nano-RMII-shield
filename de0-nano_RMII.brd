@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1903,6 +1903,36 @@ Created by Robert Siegler</description>
 </package>
 </packages>
 </library>
+<library name="linear-technology">
+<description>&lt;b&gt;Linear Technology Devices&lt;/b&gt;&lt;p&gt;
+http://www.linear-tech.com&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TSOT23-6">
+<description>&lt;b&gt;S6 Package 6-Lead Plastic TSOT-23&lt;/b&gt;&lt;p&gt;
+Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
+<wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
+<wire x1="-1.423" y1="-0.781" x2="-1.423" y2="0.781" width="0.1524" layer="21"/>
+<wire x1="-1.423" y1="0.781" x2="1.422" y2="0.781" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="0.781" x2="1.422" y2="-0.781" width="0.1524" layer="21"/>
+<circle x="-1.15" y="-0.5" radius="0.1" width="0" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.62" dy="1.22" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.62" dy="1.22" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.62" dy="1.22" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.62" dy="1.22" layer="1"/>
+<smd name="5" x="0" y="1.3" dx="0.62" dy="1.22" layer="1"/>
+<smd name="6" x="-0.95" y="1.3" dx="0.62" dy="1.22" layer="1"/>
+<text x="2.8575" y="-1.5875" size="1.016" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-1.5875" y="-1.5875" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="-1.175" y1="-1.4" x2="-0.725" y2="-0.8" layer="51"/>
+<rectangle x1="-0.225" y1="-1.4" x2="0.225" y2="-0.8" layer="51"/>
+<rectangle x1="0.725" y1="-1.4" x2="1.175" y2="-0.8" layer="51"/>
+<rectangle x1="0.725" y1="0.8" x2="1.175" y2="1.4" layer="51"/>
+<rectangle x1="-0.225" y1="0.8" x2="0.225" y2="1.4" layer="51"/>
+<rectangle x1="-1.175" y1="0.8" x2="-0.725" y2="1.4" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2153,14 +2183,18 @@ design rules under a new name.</description>
 <element name="R13" library="resistor" package="R0603" value="4k7" x="43.4" y="10.5" rot="R180"/>
 <element name="R14" library="resistor" package="R0603" value="BLM" x="23.6" y="10" rot="R270"/>
 <element name="C13" library="resistor" package="C0805" value="10uF" x="23.8" y="12.9" rot="R90"/>
-<element name="J1" library="con-jack" package="SPC4078" value="" x="64.5" y="35.8" rot="R180">
-<attribute name="MF" value="" x="64.5" y="35.8" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="64.5" y="35.8" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="64.5" y="35.8" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="64.5" y="35.8" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J1" library="con-jack" package="SPC4078" value="" x="63.7" y="35.3" rot="R180">
+<attribute name="MF" value="" x="63.7" y="35.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="63.7" y="35.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="unknown" x="63.7" y="35.3" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="63.7" y="35.3" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J2" library="seeed_connector" package="PW-3P-2.5" value="" x="48" y="34.3" rot="R180"/>
+<element name="J2" library="seeed_connector" package="PW-3P-2.5" value="" x="47.8" y="30.5" rot="R180"/>
 <element name="J3" library="seeed_connector" package="4P-65/35MIL" value="" x="71.25" y="30.4"/>
+<element name="IC1" library="linear-technology" package="TSOT23-6" value="" x="21.1" y="26.3" rot="R270"/>
+<element name="R15" library="resistor" package="R0603" value="BLM" x="46" y="40.9" rot="R90"/>
+<element name="C14" library="resistor" package="C0805" value="10uF" x="43.8" y="41" rot="R90"/>
+<element name="C15" library="resistor" package="C0603" value="100nF" x="25.1" y="26.3" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2262,6 +2296,16 @@ design rules under a new name.</description>
 <contactref element="J3" pad="3"/>
 <contactref element="J1" pad="2"/>
 <contactref element="J1" pad="1"/>
+<contactref element="IC1" pad="2"/>
+<contactref element="IC1" pad="6"/>
+<contactref element="C14" pad="2"/>
+<contactref element="C15" pad="2"/>
+<via x="26.4" y="27" extent="1-16" drill="0.3" diameter="0.8"/>
+<via x="25.1" y="28.3" extent="1-16" drill="0.3" diameter="0.8"/>
+<via x="26.4" y="28.3" extent="1-16" drill="0.3" diameter="0.8"/>
+<via x="42.3" y="41.7" extent="1-16" drill="0.3" diameter="0.8"/>
+<via x="43.8" y="43.2" extent="1-16" drill="0.3" diameter="0.8"/>
+<via x="42.3" y="43.2" extent="1-16" drill="0.3" diameter="0.8"/>
 </signal>
 <signal name="OSCIN">
 <contactref element="U1" pad="34"/>
@@ -2645,6 +2689,26 @@ design rules under a new name.</description>
 <contactref element="J3" pad="2"/>
 <contactref element="J3" pad="1"/>
 <wire x1="71.25" y1="31.67" x2="71.25" y2="34.21" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="3V3_A">
+<contactref element="IC1" pad="4"/>
+<contactref element="C14" pad="1"/>
+<contactref element="R15" pad="1"/>
+<wire x1="46" y1="40.05" x2="43.8" y2="40.05" width="1" layer="1"/>
+<wire x1="26.75" y1="25.35" x2="41.4" y2="40" width="1" layer="1"/>
+<wire x1="41.4" y1="40" x2="43.75" y2="40" width="1" layer="1"/>
+<wire x1="43.75" y1="40" x2="43.8" y2="40.05" width="0.6" layer="1"/>
+<wire x1="26.75" y1="25.35" x2="23.45" y2="25.35" width="1" layer="1"/>
+<wire x1="22.4" y1="25.35" x2="23.45" y2="25.35" width="0.6" layer="1"/>
+<contactref element="C15" pad="1"/>
+<wire x1="26.75" y1="25.35" x2="25.6" y2="25.35" width="0.6" layer="1"/>
+<wire x1="25.6" y1="25.35" x2="25.1" y2="25.45" width="0.6" layer="1"/>
+</signal>
+<signal name="N$1">
+<contactref element="R15" pad="2"/>
+<contactref element="X3" pad="29"/>
+<wire x1="46.03" y1="45.13" x2="46" y2="45.13" width="1" layer="1"/>
+<wire x1="46" y1="45.13" x2="46" y2="41.75" width="1" layer="1"/>
 </signal>
 </signals>
 </board>
