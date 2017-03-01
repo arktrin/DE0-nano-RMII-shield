@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -414,7 +414,7 @@ W = angled&lt;p&gt;
 <rectangle x1="12.446" y1="1.016" x2="12.954" y2="1.524" layer="51"/>
 <rectangle x1="14.986" y1="1.016" x2="15.494" y2="1.524" layer="51"/>
 </package>
-<package name="MA20-2">
+<package name="MA20-2_ALT">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-24.765" y1="2.54" x2="-23.495" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="-23.495" y1="2.54" x2="-22.86" y2="1.905" width="0.1524" layer="21"/>
@@ -543,7 +543,6 @@ W = angled&lt;p&gt;
 <pad name="5" x="-19.05" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="7" x="-16.51" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="9" x="-13.97" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="11" x="-11.43" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="2" x="-24.13" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="4" x="-21.59" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="6" x="-19.05" y="1.27" drill="1.016" shape="octagon"/>
@@ -564,16 +563,12 @@ W = angled&lt;p&gt;
 <pad name="22" x="1.27" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="24" x="3.81" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="26" x="6.35" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="27" x="8.89" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="28" x="8.89" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="29" x="11.43" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="31" x="13.97" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="33" x="16.51" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="35" x="19.05" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="37" x="21.59" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="39" x="24.13" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="30" x="11.43" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="32" x="13.97" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="34" x="16.51" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="36" x="19.05" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="38" x="21.59" y="1.27" drill="1.016" shape="octagon"/>
@@ -685,7 +680,7 @@ W = angled&lt;p&gt;
 <pin name="24" x="-7.62" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="26" x="-7.62" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 </symbol>
-<symbol name="MA20-2">
+<symbol name="MA20-2_ALT">
 <wire x1="3.81" y1="-27.94" x2="-3.81" y2="-27.94" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-20.32" x2="2.54" y2="-20.32" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="-22.86" x2="2.54" y2="-22.86" width="0.6096" layer="94"/>
@@ -742,7 +737,6 @@ W = angled&lt;p&gt;
 <pin name="9" x="7.62" y="-15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="8" x="-7.62" y="-17.78" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="10" x="-7.62" y="-15.24" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="11" x="7.62" y="-12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="13" x="7.62" y="-10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="15" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="12" x="-7.62" y="-12.7" visible="pad" length="middle" direction="pas" swaplevel="1"/>
@@ -758,13 +752,9 @@ W = angled&lt;p&gt;
 <pin name="22" x="-7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="24" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="26" x="-7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="27" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="29" x="7.62" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="28" x="-7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="30" x="-7.62" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="31" x="7.62" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="33" x="7.62" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="32" x="-7.62" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="34" x="-7.62" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="36" x="-7.62" y="17.78" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="38" x="-7.62" y="20.32" visible="pad" length="middle" direction="pas" swaplevel="1"/>
@@ -821,17 +811,16 @@ W = angled&lt;p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="MA20-2" prefix="SV" uservalue="yes">
+<deviceset name="MA20-2_ALT" prefix="SV" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="MA20-2" x="0" y="0"/>
+<gate name="G$1" symbol="MA20-2_ALT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MA20-2">
+<device name="" package="MA20-2_ALT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
 <connect gate="G$1" pin="12" pad="12"/>
 <connect gate="G$1" pin="13" pad="13"/>
 <connect gate="G$1" pin="14" pad="14"/>
@@ -848,13 +837,9 @@ W = angled&lt;p&gt;
 <connect gate="G$1" pin="24" pad="24"/>
 <connect gate="G$1" pin="25" pad="25"/>
 <connect gate="G$1" pin="26" pad="26"/>
-<connect gate="G$1" pin="27" pad="27"/>
-<connect gate="G$1" pin="28" pad="28"/>
 <connect gate="G$1" pin="29" pad="29"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="30" pad="30"/>
-<connect gate="G$1" pin="31" pad="31"/>
-<connect gate="G$1" pin="32" pad="32"/>
 <connect gate="G$1" pin="33" pad="33"/>
 <connect gate="G$1" pin="34" pad="34"/>
 <connect gate="G$1" pin="35" pad="35"/>
@@ -871,12 +856,7 @@ W = angled&lt;p&gt;
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -7920,8 +7900,8 @@ Source: http://cds.linear.com/docs/Datasheet/623012fb.pdf</description>
 <part name="X1" library="con-coax" deviceset="?227161*" device="1-" technology="-2"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="X6" library="con-lstb" deviceset="MA13-2" device=""/>
-<part name="X2" library="con-lstb" deviceset="MA20-2" device=""/>
-<part name="X3" library="con-lstb" deviceset="MA20-2" device=""/>
+<part name="X2" library="con-lstb" deviceset="MA20-2_ALT" device=""/>
+<part name="X3" library="con-lstb" deviceset="MA20-2_ALT" device=""/>
 <part name="X7" library="seeed_connector" deviceset="RJ45-HR911105A" device="-HR911105A"/>
 <part name="U1" library="national-semiconductor" deviceset="DP83848" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
