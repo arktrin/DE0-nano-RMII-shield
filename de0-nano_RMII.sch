@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -275,7 +275,7 @@ MA = male&lt;p&gt;
 W = angled&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="MA13-2">
+<package name="MA13-2_ALT">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-15.875" y1="2.54" x2="-14.605" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="-14.605" y1="2.54" x2="-13.97" y2="1.905" width="0.1524" layer="21"/>
@@ -360,26 +360,22 @@ W = angled&lt;p&gt;
 <pad name="1" x="-15.24" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="3" x="-12.7" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="5" x="-10.16" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="7" x="-7.62" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="9" x="-5.08" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="11" x="-2.54" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="2" x="-15.24" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="4" x="-12.7" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="6" x="-10.16" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="8" x="-7.62" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="10" x="-5.08" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="12" x="-2.54" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="13" x="0" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="14" x="0" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="15" x="2.54" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="17" x="5.08" y="-1.27" drill="1.016" shape="octagon"/>
-<pad name="19" x="7.62" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="21" x="10.16" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="23" x="12.7" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="25" x="15.24" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="16" x="2.54" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="18" x="5.08" y="1.27" drill="1.016" shape="octagon"/>
-<pad name="20" x="7.62" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="22" x="10.16" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="24" x="12.7" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="26" x="15.24" y="1.27" drill="1.016" shape="octagon"/>
@@ -620,7 +616,7 @@ W = angled&lt;p&gt;
 </package>
 </packages>
 <symbols>
-<symbol name="MA13-2">
+<symbol name="MA13-2_ALT">
 <wire x1="3.81" y1="-17.78" x2="-3.81" y2="-17.78" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-10.16" x2="2.54" y2="-10.16" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="-12.7" x2="2.54" y2="-12.7" width="0.6096" layer="94"/>
@@ -659,9 +655,7 @@ W = angled&lt;p&gt;
 <pin name="2" x="-7.62" y="-15.24" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="4" x="-7.62" y="-12.7" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="6" x="-7.62" y="-10.16" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="7" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="9" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="8" x="-7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="10" x="-7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="11" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="13" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
@@ -670,9 +664,7 @@ W = angled&lt;p&gt;
 <pin name="14" x="-7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="16" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="17" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="19" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="18" x="-7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="20" x="-7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="21" x="7.62" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="23" x="7.62" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="25" x="7.62" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
@@ -765,13 +757,13 @@ W = angled&lt;p&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MA13-2" prefix="SV" uservalue="yes">
+<deviceset name="MA13-2_ALT" prefix="SV" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="MA13-2" x="0" y="0"/>
+<gate name="G$1" symbol="MA13-2_ALT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MA13-2">
+<device name="" package="MA13-2_ALT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -783,9 +775,7 @@ W = angled&lt;p&gt;
 <connect gate="G$1" pin="16" pad="16"/>
 <connect gate="G$1" pin="17" pad="17"/>
 <connect gate="G$1" pin="18" pad="18"/>
-<connect gate="G$1" pin="19" pad="19"/>
 <connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="20" pad="20"/>
 <connect gate="G$1" pin="21" pad="21"/>
 <connect gate="G$1" pin="22" pad="22"/>
 <connect gate="G$1" pin="23" pad="23"/>
@@ -796,17 +786,10 @@ W = angled&lt;p&gt;
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
 <connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -8351,7 +8334,7 @@ Source: http://www.analog.com .. SSM2167.pdf</description>
 <parts>
 <part name="X1" library="con-coax" deviceset="?227161*" device="1-" technology="-2"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="X6" library="con-lstb" deviceset="MA13-2" device=""/>
+<part name="X6" library="con-lstb" deviceset="MA13-2_ALT" device=""/>
 <part name="X2" library="con-lstb" deviceset="MA20-2_ALT" device=""/>
 <part name="X3" library="con-lstb" deviceset="MA20-2_ALT" device=""/>
 <part name="X7" library="seeed_connector" deviceset="RJ45-HR911105A" device="-HR911105A"/>
@@ -8423,6 +8406,7 @@ Source: http://www.analog.com .. SSM2167.pdf</description>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="C21" library="resistor" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
+<part name="R17" library="resistor" deviceset="R-EU_" device="R0603" value="4k7"/>
 </parts>
 <sheets>
 <sheet>
@@ -8617,6 +8601,10 @@ Source: http://www.analog.com .. SSM2167.pdf</description>
 <attribute name="VALUE" x="147.574" y="58.801" size="1.778" layer="96"/>
 </instance>
 <instance part="GND25" gate="1" x="146.05" y="71.12" rot="R180"/>
+<instance part="R17" gate="G$1" x="17.78" y="80.01" smashed="yes" rot="R270">
+<attribute name="NAME" x="15.24" y="82.3214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="15.24" y="79.502" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9340,6 +9328,11 @@ Source: http://www.analog.com .. SSM2167.pdf</description>
 <junction x="96.52" y="67.31"/>
 <junction x="106.68" y="67.31"/>
 </segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="85.09" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
+<label x="19.05" y="88.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -9370,6 +9363,11 @@ Source: http://www.analog.com .. SSM2167.pdf</description>
 <wire x1="149.86" y1="228.6" x2="168.91" y2="228.6" width="0.1524" layer="91"/>
 <label x="153.67" y="228.6" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="X3" gate="G$1" pin="13"/>
+<wire x1="38.1" y1="62.23" x2="17.78" y2="62.23" width="0.1524" layer="91"/>
+<label x="22.86" y="62.23" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="V_RAW" class="0">
 <segment>
@@ -9378,7 +9376,7 @@ Source: http://www.analog.com .. SSM2167.pdf</description>
 <wire x1="85.09" y1="198.12" x2="96.52" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="VLOGIC" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="!RESET"/>
 <wire x1="109.22" y1="44.45" x2="106.68" y2="44.45" width="0.1524" layer="91"/>
@@ -9402,22 +9400,42 @@ Source: http://www.analog.com .. SSM2167.pdf</description>
 <wire x1="142.24" y1="46.99" x2="160.02" y2="46.99" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="DAC_SDI" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="SDI"/>
-<wire x1="142.24" y1="41.91" x2="156.21" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="41.91" x2="158.75" y2="41.91" width="0.1524" layer="91"/>
+<label x="144.78" y="41.91" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X3" gate="G$1" pin="6"/>
+<wire x1="53.34" y1="72.39" x2="66.04" y2="72.39" width="0.1524" layer="91"/>
+<label x="55.88" y="72.39" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="DAC_NCS" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="!SYNC"/>
-<wire x1="142.24" y1="39.37" x2="156.21" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="39.37" x2="158.75" y2="39.37" width="0.1524" layer="91"/>
+<label x="144.78" y="39.37" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X3" gate="G$1" pin="7"/>
+<wire x1="38.1" y1="69.85" x2="17.78" y2="69.85" width="0.1524" layer="91"/>
+<label x="22.86" y="69.85" size="1.778" layer="95"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="69.85" x2="17.78" y2="74.93" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="DAC_CLK" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="SCLK"/>
-<wire x1="142.24" y1="36.83" x2="156.21" y2="36.83" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="36.83" x2="158.75" y2="36.83" width="0.1524" layer="91"/>
+<label x="144.78" y="36.83" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X3" gate="G$1" pin="5"/>
+<wire x1="38.1" y1="72.39" x2="20.32" y2="72.39" width="0.1524" layer="91"/>
+<label x="22.86" y="72.39" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">
