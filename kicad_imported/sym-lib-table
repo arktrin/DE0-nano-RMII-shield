@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 0)
+  (lib (name "de0-nano_RMII-eagle-import")(type "KiCad")(uri "${KIPRJMOD}/de0-nano_RMII-eagle-import.kicad_sym")(options "")(descr ""))
+)
